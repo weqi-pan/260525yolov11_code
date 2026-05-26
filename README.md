@@ -42,14 +42,6 @@ dataset\passion_fruit.zip # 百香果数据集
 
 由于荔枝数据集较大，故无法上传到github，需要的可自行前往下载。
 
-示例：
-
-```bash
-git lfs install
-git lfs track "train/split_dataset.zip"
-git lfs track "*.pt"
-git add .gitattributes train/split_dataset.zip yolov11_output/weights/*.pt
-```
 
 ## 环境依赖
 
