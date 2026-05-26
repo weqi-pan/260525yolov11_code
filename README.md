@@ -7,8 +7,10 @@
 ```text
 .
 ├── train/
-│   ├── train.ipynb             # Kaggle/Python 训练 Notebook
-│   └── split_dataset.zip       # 训练用数据集
+│   └── train.ipynb             # Kaggle/Python 训练 Notebook
+├── dataset/                    # 训练用数据集
+│   ├── lemon.zip               # 柠檬数据集
+│   └── passion_fruit.zip       # 百香果数据集
 ├── yolov11_output/
 │   ├── args.yaml               # 本次训练参数
 │   ├── results.csv             # 训练指标日志
@@ -25,13 +27,20 @@
 
 ## 数据集
 
-训练数据集位于：
+自建的训练数据集位于：
 
 ```text
-train/split_dataset.zip
+dataset\lemon.zip # 柠檬数据集
+dataset\passion_fruit.zip # 百香果数据集
 ```
 
-该文件约 5.34 GB。由于 GitHub 普通仓库对单个文件有 100 MB 限制，如果需要把该数据集上传到 GitHub，建议使用 Git LFS 管理大文件。
+从网络获取的训练数据集位于：
+
+原始的网络开源数据集：[An RGB-D Image Dataset for Lychee Detection and Maturity Classification for Robotic Harvesting](https://data.mendeley.com/datasets/6svnttj9g4/1)
+
+我进行删减后实际使用的网络开源数据集：[lychee_dataset](https://www.kaggle.com/datasets/wishpan/lychee-dataset)
+
+由于荔枝数据集较大，故无法上传到github，需要的可自行前往下载。
 
 示例：
 
